@@ -32,8 +32,8 @@ def initialize_system(model_name="all-MiniLM-L6-v2"):
     model = SentenceTransformer(model_name, device=device)
 
     qdrant_client = QdrantClient(
-        url="",  # replace
-        api_key="",  # replace
+        url="Qdrant URL",  # replace
+        api_key="Qdrant APIkey",  # replace
         prefer_grpc=False,
         timeout=120
     )
