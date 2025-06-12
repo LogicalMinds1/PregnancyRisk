@@ -30,10 +30,9 @@ def initialize_system(model_name="all-MiniLM-L6-v2"):
     # Force CPU mode to avoid CUDA error
     device = "cpu"
     model = SentenceTransformer(model_name, device=device)
-
     qdrant_client = QdrantClient(
-        url="Qdrant URL",  # replace
-        api_key="Qdrant APIkey",  # replace
+        url=os.getenv("QDRANT_URL"),  # replace
+        api_key=os.getenv("QDRANT_API_KEY"),  # replace
         prefer_grpc=False,
         timeout=120
     )
