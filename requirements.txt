@@ -170,7 +170,7 @@ tokenizers==0.21.1
 tomli==2.2.1
 tomli_w==1.2.0
 torch==2.6.0
-torchaudio==2.2.1+cu121
+torchaudio==2.2.1
 torchvision==0.21.0
 tqdm==4.67.1
 traitlets==5.14.3
